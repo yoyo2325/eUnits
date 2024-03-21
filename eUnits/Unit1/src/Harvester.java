@@ -1,4 +1,6 @@
-	//Name______________________________ Date_____________
+	
+//Name______________________________ Date_____________
+//Name______________________________ Date_____________
    import edu.fcps.karel2.Display;
    import edu.fcps.karel2.Robot;
    public class Harvester extends Robot implements Workable
