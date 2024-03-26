@@ -5,7 +5,7 @@ import java.awt.Point;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Lab10 {
+public class Lab00 {
 
     public static void main(String[] args) {
         String filename = JOptionPane.showInputDialog("What robot world?");

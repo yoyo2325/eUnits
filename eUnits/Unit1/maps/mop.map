@@ -3,6 +3,12 @@
 defaultSize height='10' width='10'/>
 </properties>
 <objects>
+<beeper x='8' y='9' num='3'/>
+<beeper x='5' y='5' num='3'/>
+<beeper x='4' y='9' num='4'/>
+<beeper x='3' y='9' num='3'/>
+<beeper x='5' y='3' num='2'/>
+<beeper x='5' y='7' num='1'/>
 <wall x='1' y='10' length='1' style='vertical'/>
 <wall x='1' y='6' length='1' style='vertical'/>
 <wall x='1' y='2' length='1' style='vertical'/>

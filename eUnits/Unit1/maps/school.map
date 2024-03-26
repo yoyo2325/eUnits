@@ -5,7 +5,7 @@
   <objects>
     <beeper x='8' y='9' num='3'/>
     <beeper x='7' y='9' num='3'/>
-    <beeper x='4' y='9' num='2'/>
+    <beeper x='4' y='9' num='23'/>
     <beeper x='3' y='9' num='3'/>
     <beeper x='2' y='9' num='3'/>
     <beeper x='2' y='2' num='1'/>
