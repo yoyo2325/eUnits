@@ -3,12 +3,12 @@ import edu.fcps.karel2.Display;
 public class exam03 {
 	public static void go1(Athlete args) {
 		while(args.getY()!=1) {
-			if(args.leftIsClear()) {
-				args.turnLeft();
+			if(args.rightIsClear()) {
+				args.turnRight();
 				args.move();
 			}
-			else if(args.rightIsClear()&&!args.frontIsClear()) {
-				args.turnRight();
+			else if(args.leftIsClear()&&!args.frontIsClear()) {
+				args.turnLeft();
 			}
 			else if(!args.rightIsClear()&&!args.frontIsClear()&&!args.leftIsClear()) {
 				args.turnAround();
@@ -23,11 +23,10 @@ public class exam03 {
 			args.move();
 		}
 	}
+	
 	public static void mop(Athlete args) {
+		
 		while(args.frontIsClear()) {
-			while(!args.facingEast()) {
-				args.turnLeft();
-			}
 			while(args.nextToABeeper()) {
 				args.pickBeeper();
 			}
@@ -38,6 +37,7 @@ public class exam03 {
 		}
 		
 	}
+	
 	public static void goUp(Athlete args) {
 		
 		if(args.facingEast()) {
@@ -47,19 +47,31 @@ public class exam03 {
 			}
 			args.turnRight();
 			args.move();
+			args.turnRight();
+			while(args.frontIsClear()) {
+				args.move();
+			}
+			args.turnAround();
+			
+		}
+		else if(args.facingWest()){
+			args.turnAround();
+			while(!args.leftIsClear()) {
+				args.move();
+			}
+			args.turnLeft();
+			args.move();
 			args.turnLeft();
 			while(args.frontIsClear()) {
 				args.move();
 			}
 			args.turnAround();
-		}
-		else if(args.facingWest()){
 			
 		}
 	}
 	public static void main(String[] args) {
 		Display.openWorld("maps/mop.map");
-		Display.setSpeed(5);
+		Display.setSpeed(10);
 		Athlete a1 =new Athlete(1,1,4,50);
 		for(int i=0;i<9;++i) {
 			mop(a1);

@@ -3,6 +3,8 @@
 defaultSize height='10' width='10'/>
 </properties>
 <objects>
+<beeper x='10' y='6' num='2'/>
+<beeper x='3' y='4' num='3'/>
 <beeper x='8' y='9' num='3'/>
 <beeper x='5' y='5' num='3'/>
 <beeper x='4' y='9' num='4'/>
