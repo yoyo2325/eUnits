@@ -1,3 +1,5 @@
+package Lab06;
+
 	//Name______________________________ Date_____________
    import edu.fcps.Turtle;
     public class SquareTurtle extends Turtle
@@ -34,11 +36,10 @@
        public void drawShape()
       {
       
-         /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
-      	/************************/
+    	   for(int k = 1; k <= 4; ++k) {
+    	         this.forward(this.mySize);
+    	         this.turnLeft(90.0D);
+    	   }
       
       }
    }

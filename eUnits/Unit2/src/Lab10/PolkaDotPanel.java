@@ -1,3 +1,5 @@
+package Lab10;
+
    //Torbert, e-mail: mr@torbert.com, website: www.mr.torbert.com
 	//version 6.17.2003
 
@@ -22,7 +24,7 @@
          myBuffer = myImage.getGraphics();
          myBuffer.setColor(BACKGROUND);
          myBuffer.fillRect(0, 0, FRAME, FRAME);
-         pd = new Polkadot();
+         pd = new Polkadot(0,0,50,Color.GREEN);
          t = new Timer(1000, new Listener());
          t.start();
       }
@@ -34,9 +36,8 @@
       {
           public void actionPerformed(ActionEvent e)
          {
-         /**************************
-            your code goes here
-         **************************/
+        	myBuffer.setColor(PolkaDotPanel.BACKGROUND);
+        	myBuffer.fillRect(0, 0, 400, 400);
             pd.jump(FRAME, FRAME);
             pd.draw(myBuffer);
             
